@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            padding: 5px 10px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #e2e2e2;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/" onclick="route(event)">Home</a></li>
+            <li><a href="/about" onclick="route(event)">About</a></li>
+            <li><a href="/contact" onclick="route(event)">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="root">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
